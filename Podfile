@@ -10,7 +10,8 @@ target 'GoMovies' do
 	pod 'AFNetworking', '~> 3.0'
 	pod 'SDWebImage', '~> 4.0'
 	pod 'FontAwesomeKit', '~> 2.2.0'
-  
+	pod 'GLViewPagerViewController', '~> 1.0.1'  
+	
   target 'GoMoviesTests' do
     inherit! :search_paths
     # Pods for testing

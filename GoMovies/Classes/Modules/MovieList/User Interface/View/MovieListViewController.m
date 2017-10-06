@@ -8,8 +8,8 @@
 
 #import "MovieListViewController.h"
 #import "MovieListSingleCell.h"
-
 #import "MovieListAPIDataManager.h"
+#import "ColorPalette.h"
 
 @interface MovieListViewController()
 @property (readwrite, nonatomic, strong) NSArray *movies;
@@ -18,6 +18,8 @@
 @implementation MovieListViewController
 
 - (void)reload:(__unused id)sender {
+    
+    [self.refreshControl beginRefreshing];
     
     [MovieListAPIDataManager showsWithBlock:^(NSArray *movies, NSError *error) {
         if (!error) {
@@ -33,25 +35,33 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    [self setupViews];
     [self setupTableView];
     
     [self reload:nil];
+}
+
+- (void)setupViews {
+    self.title = @"GoMovies";
 }
 
 - (void)setupTableView {
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     
-    self.tableView.backgroundColor = UIColor.whiteColor;
+    self.tableView.backgroundColor = ColorPalette.MovieCellBackgroundColor;
     
-    self.tableView.estimatedRowHeight = 200;
     self.tableView.rowHeight = 200;
+    self.tableView.estimatedRowHeight = 200;
+    self.tableView.contentInset = UIEdgeInsetsMake(5, 0, 0, 0);
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
     [self.tableView registerNib:[UINib nibWithNibName:@"MovieListSingleCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"movieListSingleCell"];
+    
     
     self.refreshControl = [[UIRefreshControl alloc] initWithFrame:CGRectMake(0.0f, 0.0f, self.tableView.frame.size.width, 100.0f)];
     [self.refreshControl addTarget:self action:@selector(reload:) forControlEvents:UIControlEventValueChanged];
-    [self.tableView.tableHeaderView addSubview:self.refreshControl];
+    [self.tableView addSubview:self.refreshControl];
 
 }
 

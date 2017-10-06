@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A8ECFF22641902B17EF0D61CF42F706A'
-               BlueprintName = 'Pods-GoMovies'
+               BlueprintIdentifier = 'CED603FF37247C7E31D9F3EC99BF2B9F'
+               BlueprintName = 'GLViewPagerViewController'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-GoMovies.a'>
+               BuildableName = 'libGLViewPagerViewController.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

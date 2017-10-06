@@ -15,5 +15,6 @@
 @interface RootWireframe : NSObject
 
 - (id)initWithWindow:(UIWindow *)window;
+- (void)installRootViewController;
 
 @end

@@ -16,5 +16,5 @@
 #import <UIKit/UIKit.h>
 
 @interface MovieListWireFrame : NSObject <MovieListWireFrameProtocol>
-
++ (void)presentMovieListModuleFrom:(UIViewController*)fromViewController;
 @end

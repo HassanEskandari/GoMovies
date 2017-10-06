@@ -8,6 +8,7 @@
 
 #import "GoMoviesAppDelegate.h"
 #import "GoMoviesAppDependencies.h"
+#import "UIColor+Hex.h"
 
 @interface GoMoviesAppDelegate ()
 
@@ -19,6 +20,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [self customizeNavigationBar];
+    
     // initialize window
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     _window.backgroundColor = [UIColor whiteColor];
@@ -33,6 +36,13 @@
     [_window makeKeyAndVisible];
 
     return YES;
+}
+
+- (void)customizeNavigationBar {
+    [UINavigationBar appearance].barStyle = UIBarStyleBlack;
+    [UINavigationBar appearance].tintColor = [UIColor colorWithCSS:@"333338"];
+    [UINavigationBar appearance].barTintColor = [UIColor colorWithCSS:@"333338"];
+
 }
 
 @end

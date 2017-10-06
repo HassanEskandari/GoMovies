@@ -7,11 +7,11 @@
 //
 
 #import "GoMoviesAppDependencies.h"
-
 #import "RootWireframe.h"
+#import "UIColor+Hex.h"
 
 @interface GoMoviesAppDependencies ()
-
+@property RootWireframe *rootWireframe;
 @end
 
 @implementation GoMoviesAppDependencies
@@ -29,17 +29,12 @@
 - (void)installRootViewController
 {
     // *** present first wireframe here
+    [self.rootWireframe installRootViewController];
 }
 
 - (void)configureDependencies:(UIWindow *)window
 {
-    // -----
-    // root classes
-    RootWireframe *rootWireframe = [[RootWireframe alloc] initWithWindow:window];
-    window.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"MovieListViewController"];
-    // *** add datastore
-
-    // *** module initialization
+    self.rootWireframe = [[RootWireframe alloc] initWithWindow:window];
 }
 
 

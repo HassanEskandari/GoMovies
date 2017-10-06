@@ -28,6 +28,9 @@
     interactor.APIDataManager = APIDataManager;
 
     //TODO: ViewController presentation
+    if ([fromViewController isKindOfClass: [UINavigationController class]]) {
+        [(UINavigationController *)fromViewController setViewControllers:[NSArray arrayWithObjects:(UIViewController *)view, nil] animated:YES];
+    }
 }
 
 @end
