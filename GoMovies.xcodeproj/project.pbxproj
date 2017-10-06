@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		004DE97135B87ADAB9C486F0 /* libPods-GoMovies.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEAE957D22A451CF37F1F0A /* libPods-GoMovies.a */; };
 		5C7C58BE1F85522C0092A47A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C7C58BC1F85522C0092A47A /* Main.storyboard */; };
 		5C7C58C01F85522C0092A47A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C7C58BF1F85522C0092A47A /* Assets.xcassets */; };
 		5C7C58C31F85522C0092A47A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C7C58C11F85522C0092A47A /* LaunchScreen.storyboard */; };
@@ -29,8 +30,14 @@
 		5C7C59C01F8711880092A47A /* ColorPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7C59BF1F8711880092A47A /* ColorPalette.m */; };
 		5C7C59C31F8713000092A47A /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7C59C21F8713000092A47A /* UIColor+Hex.m */; };
 		5C7C59C61F878EA80092A47A /* NSNumber+TimeFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7C59C51F878EA80092A47A /* NSNumber+TimeFormat.m */; };
-		DD3ACEAB258205BB04C9698E /* libPods-GoMoviesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB49C821B5C4E4A3FD01681E /* libPods-GoMoviesTests.a */; };
-		EE0BBA1A0B27A69E557E65C2 /* libPods-GoMovies.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1985062ADCC629FAA45096D /* libPods-GoMovies.a */; };
+		5C7C5A0B1F87E9C40092A47A /* MovieDetailLocalDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7C59F31F87E4120092A47A /* MovieDetailLocalDataManager.m */; };
+		5C7C5A0C1F87E9C40092A47A /* MovieDetailAPIDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7C59F61F87E4120092A47A /* MovieDetailAPIDataManager.m */; };
+		5C7C5A0D1F87E9C40092A47A /* MovieDetailInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7C59F91F87E4120092A47A /* MovieDetailInteractor.m */; };
+		5C7C5A0E1F87E9C40092A47A /* MovieDetailItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7C59FB1F87E4120092A47A /* MovieDetailItem.m */; };
+		5C7C5A0F1F87E9C40092A47A /* MovieDetailPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7C5A001F87E4120092A47A /* MovieDetailPresenter.m */; };
+		5C7C5A101F87E9C40092A47A /* MovieDetailWireFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7C5A031F87E4120092A47A /* MovieDetailWireFrame.m */; };
+		5C7C5A111F87E9C40092A47A /* MovieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7C5A061F87E4120092A47A /* MovieDetailViewController.m */; };
+		6C76B0B85B1FD2A1C927A4CF /* libPods-GoMoviesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C1A29121C16D3AFC02B320 /* libPods-GoMoviesTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +65,7 @@
 
 /* Begin PBXFileReference section */
 		564BE1453AD23551816D4B2A /* Pods-GoMoviesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoMoviesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoMoviesTests/Pods-GoMoviesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5AEAE957D22A451CF37F1F0A /* libPods-GoMovies.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoMovies.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C7C58B31F85522C0092A47A /* GoMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C7C58BD1F85522C0092A47A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C7C58BF1F85522C0092A47A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -101,11 +109,25 @@
 		5C7C59C21F8713000092A47A /* UIColor+Hex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		5C7C59C41F878EA80092A47A /* NSNumber+TimeFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+TimeFormat.h"; sourceTree = "<group>"; };
 		5C7C59C51F878EA80092A47A /* NSNumber+TimeFormat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+TimeFormat.m"; sourceTree = "<group>"; };
+		5C7C59F21F87E4120092A47A /* MovieDetailLocalDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieDetailLocalDataManager.h; sourceTree = "<group>"; };
+		5C7C59F31F87E4120092A47A /* MovieDetailLocalDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieDetailLocalDataManager.m; sourceTree = "<group>"; };
+		5C7C59F51F87E4120092A47A /* MovieDetailAPIDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieDetailAPIDataManager.h; sourceTree = "<group>"; };
+		5C7C59F61F87E4120092A47A /* MovieDetailAPIDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieDetailAPIDataManager.m; sourceTree = "<group>"; };
+		5C7C59F81F87E4120092A47A /* MovieDetailItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieDetailItem.h; sourceTree = "<group>"; };
+		5C7C59F91F87E4120092A47A /* MovieDetailInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieDetailInteractor.m; sourceTree = "<group>"; };
+		5C7C59FA1F87E4120092A47A /* MovieDetailInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieDetailInteractor.h; sourceTree = "<group>"; };
+		5C7C59FB1F87E4120092A47A /* MovieDetailItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieDetailItem.m; sourceTree = "<group>"; };
+		5C7C59FD1F87E4120092A47A /* MovieDetailProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieDetailProtocols.h; sourceTree = "<group>"; };
+		5C7C5A001F87E4120092A47A /* MovieDetailPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieDetailPresenter.m; sourceTree = "<group>"; };
+		5C7C5A011F87E4120092A47A /* MovieDetailPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieDetailPresenter.h; sourceTree = "<group>"; };
+		5C7C5A031F87E4120092A47A /* MovieDetailWireFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieDetailWireFrame.m; sourceTree = "<group>"; };
+		5C7C5A041F87E4120092A47A /* MovieDetailWireFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieDetailWireFrame.h; sourceTree = "<group>"; };
+		5C7C5A061F87E4120092A47A /* MovieDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieDetailViewController.m; sourceTree = "<group>"; };
+		5C7C5A071F87E4120092A47A /* MovieDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieDetailViewController.h; sourceTree = "<group>"; };
 		6097C948BD7067CECD8F7739 /* Pods-GoMoviesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoMoviesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoMoviesTests/Pods-GoMoviesTests.release.xcconfig"; sourceTree = "<group>"; };
 		79A31AC9F7B4BAF5961AC596 /* Pods-GoMovies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoMovies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoMovies/Pods-GoMovies.debug.xcconfig"; sourceTree = "<group>"; };
-		A1985062ADCC629FAA45096D /* libPods-GoMovies.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoMovies.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB49C821B5C4E4A3FD01681E /* libPods-GoMoviesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoMoviesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B457197624A16522955DAE /* Pods-GoMovies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoMovies.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoMovies/Pods-GoMovies.release.xcconfig"; sourceTree = "<group>"; };
+		F3C1A29121C16D3AFC02B320 /* libPods-GoMoviesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoMoviesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE0BBA1A0B27A69E557E65C2 /* libPods-GoMovies.a in Frameworks */,
+				004DE97135B87ADAB9C486F0 /* libPods-GoMovies.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,7 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD3ACEAB258205BB04C9698E /* libPods-GoMoviesTests.a in Frameworks */,
+				6C76B0B85B1FD2A1C927A4CF /* libPods-GoMoviesTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +263,7 @@
 		5C7C58E71F8553680092A47A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				5C7C59EE1F87E4120092A47A /* MovieDetail */,
 				5C7C58ED1F85551A0092A47A /* MovieList */,
 			);
 			path = Modules;
@@ -387,11 +410,113 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		5C7C59EE1F87E4120092A47A /* MovieDetail */ = {
+			isa = PBXGroup;
+			children = (
+				5C7C59EF1F87E4120092A47A /* Application Logic */,
+				5C7C59FC1F87E4120092A47A /* Protocols */,
+				5C7C59FE1F87E4120092A47A /* User Interface */,
+			);
+			path = MovieDetail;
+			sourceTree = "<group>";
+		};
+		5C7C59EF1F87E4120092A47A /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				5C7C59F01F87E4120092A47A /* DataManager */,
+				5C7C59F71F87E4120092A47A /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		5C7C59F01F87E4120092A47A /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				5C7C59F11F87E4120092A47A /* Local */,
+				5C7C59F41F87E4120092A47A /* API */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		5C7C59F11F87E4120092A47A /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				5C7C59F21F87E4120092A47A /* MovieDetailLocalDataManager.h */,
+				5C7C59F31F87E4120092A47A /* MovieDetailLocalDataManager.m */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		5C7C59F41F87E4120092A47A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5C7C59F51F87E4120092A47A /* MovieDetailAPIDataManager.h */,
+				5C7C59F61F87E4120092A47A /* MovieDetailAPIDataManager.m */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		5C7C59F71F87E4120092A47A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5C7C59F81F87E4120092A47A /* MovieDetailItem.h */,
+				5C7C59F91F87E4120092A47A /* MovieDetailInteractor.m */,
+				5C7C59FA1F87E4120092A47A /* MovieDetailInteractor.h */,
+				5C7C59FB1F87E4120092A47A /* MovieDetailItem.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5C7C59FC1F87E4120092A47A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5C7C59FD1F87E4120092A47A /* MovieDetailProtocols.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		5C7C59FE1F87E4120092A47A /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				5C7C59FF1F87E4120092A47A /* Presenter */,
+				5C7C5A021F87E4120092A47A /* WireFrame */,
+				5C7C5A051F87E4120092A47A /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		5C7C59FF1F87E4120092A47A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5C7C5A001F87E4120092A47A /* MovieDetailPresenter.m */,
+				5C7C5A011F87E4120092A47A /* MovieDetailPresenter.h */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5C7C5A021F87E4120092A47A /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				5C7C5A041F87E4120092A47A /* MovieDetailWireFrame.h */,
+				5C7C5A031F87E4120092A47A /* MovieDetailWireFrame.m */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		5C7C5A051F87E4120092A47A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5C7C5A061F87E4120092A47A /* MovieDetailViewController.m */,
+				5C7C5A071F87E4120092A47A /* MovieDetailViewController.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		9A269DDD6702959877B6E3A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A1985062ADCC629FAA45096D /* libPods-GoMovies.a */,
-				AB49C821B5C4E4A3FD01681E /* libPods-GoMoviesTests.a */,
+				5AEAE957D22A451CF37F1F0A /* libPods-GoMovies.a */,
+				F3C1A29121C16D3AFC02B320 /* libPods-GoMoviesTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -542,9 +667,22 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GoMovies/Pods-GoMovies-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/FontAwesomeKit/FontAwesomeKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GLViewPagerViewController/GLViewPagerViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Segmentio/Segmentio.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesomeKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GLViewPagerViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Segmentio.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -624,6 +762,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C7C5A0B1F87E9C40092A47A /* MovieDetailLocalDataManager.m in Sources */,
+				5C7C5A0C1F87E9C40092A47A /* MovieDetailAPIDataManager.m in Sources */,
+				5C7C5A0D1F87E9C40092A47A /* MovieDetailInteractor.m in Sources */,
+				5C7C5A0E1F87E9C40092A47A /* MovieDetailItem.m in Sources */,
+				5C7C5A0F1F87E9C40092A47A /* MovieDetailPresenter.m in Sources */,
+				5C7C5A101F87E9C40092A47A /* MovieDetailWireFrame.m in Sources */,
+				5C7C5A111F87E9C40092A47A /* MovieDetailViewController.m in Sources */,
 				5C7C59181F85565D0092A47A /* RootWireframe.m in Sources */,
 				5C7C59B91F866D880092A47A /* Movie.m in Sources */,
 				5C7C591A1F85565D0092A47A /* MovieListAPIDataManager.m in Sources */,

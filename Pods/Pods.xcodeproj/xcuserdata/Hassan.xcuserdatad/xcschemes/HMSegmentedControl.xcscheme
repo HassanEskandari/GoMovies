@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'CED603FF37247C7E31D9F3EC99BF2B9F'
-               BlueprintName = 'GLViewPagerViewController'
+               BlueprintIdentifier = '6E66B362AE57238557E51E1B585B5C93'
+               BlueprintName = 'HMSegmentedControl'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libGLViewPagerViewController.a'>
+               BuildableName = 'libHMSegmentedControl.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -18,5 +18,6 @@
 
 + (UIColor *) RatingColor { return [UIColor colorWithCSS:@"FFCD00"]; }
 
++ (UIColor *) IndicatorColor { return [UIColor colorWithCSS:@"FFCD00"]; }
 
 @end

@@ -40,9 +40,9 @@
 
 - (void)customizeNavigationBar {
     [UINavigationBar appearance].barStyle = UIBarStyleBlack;
-    [UINavigationBar appearance].tintColor = [UIColor colorWithCSS:@"333338"];
+    [UINavigationBar appearance].tintColor = UIColor.whiteColor;
     [UINavigationBar appearance].barTintColor = [UIColor colorWithCSS:@"333338"];
-
+    [UINavigationBar appearance].titleTextAttributes = @{NSForegroundColorAttributeName: UIColor.whiteColor};
 }
 
 @end

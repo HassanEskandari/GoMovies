@@ -10,6 +10,7 @@
 #import "MovieListSingleCell.h"
 #import "MovieListAPIDataManager.h"
 #import "ColorPalette.h"
+#import "MovieDetailWireFrame.h"
 
 @interface MovieListViewController()
 @property (readwrite, nonatomic, strong) NSArray *movies;
@@ -42,7 +43,7 @@
 }
 
 - (void)setupViews {
-    self.title = @"GoMovies";
+    self.title = @"GoMovies";    
 }
 
 - (void)setupTableView {
@@ -75,7 +76,19 @@
     
     return cell;
 }
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    Movie *movie = [self.movies objectAtIndex:indexPath.row];
+    if(self.navigationController) {
+        UIBarButtonItem *newBackButton =
+        [[UIBarButtonItem alloc] initWithTitle:@"Back"
+                                         style:UIBarButtonItemStylePlain
+                                        target:nil
+                                        action:nil];
+        [[self navigationItem] setBackBarButtonItem:newBackButton];
+        [MovieDetailWireFrame presentMovieDetailModuleFrom:self.navigationController forMovie:movie];
+    }
+}
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }

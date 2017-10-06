@@ -18,4 +18,5 @@
 
 @property (class, readonly) UIColor *RatingColor;
 
+@property (class, readonly) UIColor *IndicatorColor;
 @end

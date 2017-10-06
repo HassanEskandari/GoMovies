@@ -8,6 +8,7 @@
 
 #import "RootWireframe.h"
 #import "MovieListWireFrame.h"
+#import "MovieDetailWireFrame.h"
 
 @interface RootWireframe ()
 @property UIWindow *window;
@@ -27,8 +28,7 @@
 - (void)installRootViewController {
     self.window.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateInitialViewController];
     
-    [MovieListWireFrame presentMovieListModuleFrom:self.window.rootViewController];
-    
+    [MovieListWireFrame presentMovieListModuleFrom:self.window.rootViewController];    
 }
 
 @end

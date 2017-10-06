@@ -77,7 +77,7 @@
     
     self.movieTitleLabel.text = movie.name;
     self.movieRatingLabel.text = [NSString stringWithFormat:@"%2.1F", [movie.rating.average doubleValue]];
-    self.movieGenreLabel.text = [movie.genres componentsJoinedByString:@","];
+    self.movieGenreLabel.text = [movie.genres componentsJoinedByString:@", "];
     self.moviePlotLabel.text = [movie.summary stringByStrippingHTML];
     
     [self.movieImageView sd_setShowActivityIndicatorView:YES];

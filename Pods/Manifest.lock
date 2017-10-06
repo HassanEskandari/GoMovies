@@ -35,7 +35,7 @@ PODS:
     - FontAwesomeKit/Core
   - FontAwesomeKit/Zocial (2.2.1):
     - FontAwesomeKit/Core
-  - GLViewPagerViewController (1.0.2)
+  - HMSegmentedControl (1.5.4)
   - JSONModel (1.7.0)
   - SDWebImage (4.1.0):
     - SDWebImage/Core (= 4.1.0)
@@ -44,17 +44,17 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
   - FontAwesomeKit (~> 2.2.0)
-  - GLViewPagerViewController (~> 1.0.1)
+  - HMSegmentedControl
   - JSONModel
   - SDWebImage (~> 4.0)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   FontAwesomeKit: 3614979b3dbb0ec3f7fac1bd760b91f66c31db67
-  GLViewPagerViewController: 8024347deb3d0d0e9d07360a334d9e4b43c86e41
+  HMSegmentedControl: b25bc4ec44766e073d62c473188fb354ee244b76
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
   SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
 
-PODFILE CHECKSUM: fb1353da8958951c789a2349deee739a3d7874f9
+PODFILE CHECKSUM: a07fd499353abdc12832429d742be3124b4ed915
 
 COCOAPODS: 1.3.1
