@@ -22,6 +22,8 @@
 @protocol MovieListViewProtocol
 @required
 @property (nonatomic, strong) id <MovieListPresenterProtocol> presenter;
+
+- (void)showMovieList:(NSArray *)movies;
 /**
  * Add here your methods for communication PRESENTER -> VIEWCONTROLLER
  */
@@ -43,12 +45,14 @@
 /**
  * Add here your methods for communication VIEWCONTROLLER -> PRESENTER
  */
+- (void)reload;
 @end
 
 @protocol MovieListInteractorOutputProtocol
 /**
  * Add here your methods for communication INTERACTOR -> PRESENTER
  */
+- (void)movieListLoaded:(NSArray *)movies;
 @end
 
 @protocol MovieListInteractorInputProtocol
@@ -59,6 +63,7 @@
 /**
  * Add here your methods for communication PRESENTER -> INTERACTOR
  */
+- (void)reload;
 @end
 
 
@@ -69,6 +74,8 @@
 @end
 
 @protocol MovieListAPIDataManagerInputProtocol <MovieListDataManagerInputProtocol>
+
+- (NSURLSessionDataTask *)showsWithBlock:(void (^)(NSArray *movies, NSError *error))block;
 /**
  * Add here your methods for communication INTERACTOR -> APIDATAMANAGER
  */

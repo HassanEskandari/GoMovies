@@ -34,10 +34,10 @@
     self.segmentControl.backgroundColor = ColorPalette.MovieCellBackgroundColor;
     
     self.segmentControl.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor grayColor],
-                                                NSFontAttributeName : [UIFont fontWithName:@"Helvetica" size:20.0]
+                                                NSFontAttributeName : [UIFont fontWithName:@"Helvetica-Light" size:20.0]
                                                 };
     self.segmentControl.selectedTitleTextAttributes = @{NSForegroundColorAttributeName : [UIColor blackColor],
-                                                        NSFontAttributeName : [UIFont fontWithName:@"Helvetica" size:20.0]
+                                                        NSFontAttributeName : [UIFont fontWithName:@"Helvetica-Light" size:20.0]
                                                         };
 
     [self.segmentControl addTarget:self action:@selector(segmentedControlChangedValue:) forControlEvents:UIControlEventValueChanged];

@@ -19,19 +19,14 @@
 @implementation MovieListViewController
 
 - (void)reload:(__unused id)sender {
-    
     [self.refreshControl beginRefreshing];
-    
-    [MovieListAPIDataManager showsWithBlock:^(NSArray *movies, NSError *error) {
-        if (!error) {
-            self.movies = movies;
-            [self.tableView reloadData];
-        }
-
-        [self.refreshControl endRefreshing];
-    }];
+    [self.presenter reload];
 }
-
+- (void)showMovieList:(NSArray *)movies {
+    self.movies = movies;
+    [self.tableView reloadData];
+    [self.refreshControl endRefreshing];
+}
 #pragma mark - ViewController Lifecycle
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -11,4 +11,12 @@
 
 @implementation MovieListPresenter
 
+- (void)reload {
+    [self.interactor reload];
+}
+
+- (void)movieListLoaded:(NSArray *)movies {
+    [self.view showMovieList:movies];
+}
+
 @end

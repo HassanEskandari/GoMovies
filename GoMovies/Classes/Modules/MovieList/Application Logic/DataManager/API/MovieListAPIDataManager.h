@@ -11,6 +11,5 @@
 
 @interface MovieListAPIDataManager : NSObject <MovieListAPIDataManagerInputProtocol>
 
-+ (NSURLSessionDataTask *)showsWithBlock:(void (^)(NSArray *movies, NSError *error))block;
 
 @end

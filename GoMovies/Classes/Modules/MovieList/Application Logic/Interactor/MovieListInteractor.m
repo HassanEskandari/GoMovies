@@ -10,4 +10,13 @@
 
 @implementation MovieListInteractor
 
+- (void)reload {
+
+    [self.APIDataManager showsWithBlock:^(NSArray *movies, NSError *error) {
+        if (!error) {
+            [self.presenter movieListLoaded:movies];
+        }
+    }];
+}
+
 @end

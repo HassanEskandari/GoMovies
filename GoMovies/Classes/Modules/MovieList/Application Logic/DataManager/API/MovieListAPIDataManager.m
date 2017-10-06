@@ -13,7 +13,7 @@
 
 @implementation MovieListAPIDataManager
 
-+ (NSURLSessionDataTask *)showsWithBlock:(void (^)(NSArray *movies, NSError *error))block {
+- (NSURLSessionDataTask *)showsWithBlock:(void (^)(NSArray *movies, NSError *error))block {
     
     return [[AFTVMazeAPIClient sharedClient] GET:@"shows" parameters:nil progress:nil success:^(NSURLSessionDataTask * __unused task, id JSON) {
         
