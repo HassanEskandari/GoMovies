@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "MovieListAPIDataManager.h"
 
 @interface GoMoviesTests : XCTestCase
 
@@ -22,6 +23,25 @@
 - (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
+}
+
+- (void)testShowsResponse {
+
+    XCTestExpectation *expectation = [self expectationWithDescription:@"Web Service Call Result Expectation"];
+    
+    XCTAssertNoThrow(
+    [MovieListAPIDataManager showsWithBlock:^(NSArray *movies, NSError *error) {
+
+        XCTAssertNil(error);
+        XCTAssertNotNil(movies);
+        [expectation fulfill];
+    }]);
+    
+    [self waitForExpectationsWithTimeout:5.0 handler:^(NSError * _Nullable error) {
+        if (error) {
+            NSLog(@"Timeout Error: %@", error);
+        }
+    }];    
 }
 
 - (void)testExample {
