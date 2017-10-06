@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		004DE97135B87ADAB9C486F0 /* libPods-GoMovies.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEAE957D22A451CF37F1F0A /* libPods-GoMovies.a */; };
+		5C4FE1331F882B6F003B9F69 /* MovieInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4FE1311F882B6F003B9F69 /* MovieInfoCell.m */; };
+		5C4FE1341F882B6F003B9F69 /* MovieInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4FE1321F882B6F003B9F69 /* MovieInfoCell.xib */; };
+		5C4FE1371F882BBE003B9F69 /* NSStringCategoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4FE1361F882BBE003B9F69 /* NSStringCategoryTests.m */; };
+		5C4FE1391F882D06003B9F69 /* NSNumberCategoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4FE1381F882D06003B9F69 /* NSNumberCategoryTests.m */; };
 		5C7C58BE1F85522C0092A47A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C7C58BC1F85522C0092A47A /* Main.storyboard */; };
 		5C7C58C01F85522C0092A47A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C7C58BF1F85522C0092A47A /* Assets.xcassets */; };
 		5C7C58C31F85522C0092A47A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C7C58C11F85522C0092A47A /* LaunchScreen.storyboard */; };
@@ -66,6 +70,11 @@
 /* Begin PBXFileReference section */
 		564BE1453AD23551816D4B2A /* Pods-GoMoviesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoMoviesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoMoviesTests/Pods-GoMoviesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5AEAE957D22A451CF37F1F0A /* libPods-GoMovies.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoMovies.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4FE1301F882B6F003B9F69 /* MovieInfoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieInfoCell.h; sourceTree = "<group>"; };
+		5C4FE1311F882B6F003B9F69 /* MovieInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieInfoCell.m; sourceTree = "<group>"; };
+		5C4FE1321F882B6F003B9F69 /* MovieInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieInfoCell.xib; sourceTree = "<group>"; };
+		5C4FE1361F882BBE003B9F69 /* NSStringCategoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStringCategoryTests.m; sourceTree = "<group>"; };
+		5C4FE1381F882D06003B9F69 /* NSNumberCategoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSNumberCategoryTests.m; sourceTree = "<group>"; };
 		5C7C58B31F85522C0092A47A /* GoMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C7C58BD1F85522C0092A47A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C7C58BF1F85522C0092A47A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -150,6 +159,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C4FE12F1F882B55003B9F69 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5C4FE1301F882B6F003B9F69 /* MovieInfoCell.h */,
+				5C4FE1311F882B6F003B9F69 /* MovieInfoCell.m */,
+				5C4FE1321F882B6F003B9F69 /* MovieInfoCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5C4FE1351F882B97003B9F69 /* CategoryTests */ = {
+			isa = PBXGroup;
+			children = (
+				5C4FE1361F882BBE003B9F69 /* NSStringCategoryTests.m */,
+				5C4FE1381F882D06003B9F69 /* NSNumberCategoryTests.m */,
+			);
+			path = CategoryTests;
+			sourceTree = "<group>";
+		};
 		5C7C58AA1F85522C0092A47A = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +214,7 @@
 		5C7C58CE1F85522C0092A47A /* GoMoviesTests */ = {
 			isa = PBXGroup;
 			children = (
+				5C4FE1351F882B97003B9F69 /* CategoryTests */,
 				5C7C58CF1F85522C0092A47A /* GoMoviesTests.m */,
 				5C7C58D11F85522C0092A47A /* Info.plist */,
 			);
@@ -506,6 +535,7 @@
 		5C7C5A051F87E4120092A47A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5C4FE12F1F882B55003B9F69 /* Cells */,
 				5C7C5A061F87E4120092A47A /* MovieDetailViewController.m */,
 				5C7C5A071F87E4120092A47A /* MovieDetailViewController.h */,
 			);
@@ -624,6 +654,7 @@
 				5C7C58C31F85522C0092A47A /* LaunchScreen.storyboard in Resources */,
 				5C7C58C01F85522C0092A47A /* Assets.xcassets in Resources */,
 				5C7C59251F8557990092A47A /* MovieListSingleCell.xib in Resources */,
+				5C4FE1341F882B6F003B9F69 /* MovieInfoCell.xib in Resources */,
 				5C7C58BE1F85522C0092A47A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -770,6 +801,7 @@
 				5C7C5A101F87E9C40092A47A /* MovieDetailWireFrame.m in Sources */,
 				5C7C5A111F87E9C40092A47A /* MovieDetailViewController.m in Sources */,
 				5C7C59181F85565D0092A47A /* RootWireframe.m in Sources */,
+				5C4FE1331F882B6F003B9F69 /* MovieInfoCell.m in Sources */,
 				5C7C59B91F866D880092A47A /* Movie.m in Sources */,
 				5C7C591A1F85565D0092A47A /* MovieListAPIDataManager.m in Sources */,
 				5C7C591B1F85565D0092A47A /* MovieListItem.m in Sources */,
@@ -794,6 +826,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C7C58D01F85522C0092A47A /* GoMoviesTests.m in Sources */,
+				5C4FE1391F882D06003B9F69 /* NSNumberCategoryTests.m in Sources */,
+				5C4FE1371F882BBE003B9F69 /* NSStringCategoryTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,7 @@
 #import "MovieDetailProtocols.h"
 #import <HMSegmentedControl/HMSegmentedControl.h>
 
-@interface MovieDetailViewController : UIViewController <MovieDetailViewProtocol>
+@interface MovieDetailViewController : UIViewController <MovieDetailViewProtocol, UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic) Movie *movie;
 
